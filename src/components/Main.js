@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid } from '@material-ui/core'
 import Header from './Header'
+import Content from './Content'
 
 export class Main extends Component {
     render() {
@@ -11,12 +12,11 @@ export class Main extends Component {
                         <Header/>
                     </Grid>
                     <Grid item container>
-                        <Grid item xs={0} sm={2}/>
+                        <Grid item xs={false} sm={2}/>
                         <Grid item xs={12} sm={8}>
-                            this is where content will be this is where content will be this is where content will be
-                            this is where content will be this is where content will be this is where content will be
+                            <Content/>
                         </Grid>
-                        <Grid item xs={0} sm={2}/>
+                        <Grid item xs={false} sm={2}/>
                     </Grid>
                 </Grid>
             </div>
